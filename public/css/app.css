@@ -398,11 +398,11 @@ video {
   --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: #2563eb;
+  --tw-ring-color: #F2BC56;
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  border-color: #2563eb;
+  border-color: #F2BC56;
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
@@ -479,18 +479,6 @@ select {
   border-radius: 100%;
 }
 
-[type='checkbox']:focus,[type='radio']:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-  --tw-ring-offset-width: 2px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: #2563eb;
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-}
-
 [type='checkbox']:checked,[type='radio']:checked {
   border-color: transparent;
   background-color: currentColor;
@@ -563,7 +551,7 @@ select {
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: #F2BC56;
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -610,7 +598,7 @@ select {
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: #F2BC56;
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -882,14 +870,40 @@ select {
 
 /* Custom CSS */
 
+/* backgrounds */
+
+.background {
+    background-image: url('https://free4kwallpapers.com/uploads/originals/2022/04/20/rubiks-cube-digital-art-wallpaper.jpg'); 
+    background-repeat:no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+.background-login {
+    background: rgba(10, 28, 42, .8); 
+    border-radius:2em; 
+    padding:2em;
+}
+
+/* colors */
+
 .text-yellow {
     color: #F2BC56;
 }
 
-.border-yellow {
-    border-color: #F2BC56;
+.text-darkblue {
+    color: #0A1C2A;
 }
 
-.ring-yellow {
-    --tw-ring-color:#F2BC56;
+.background-yellow {
+    background-color: #F2BC56;
+}
+
+.background-yellow:hover {
+    background-color: white;
+    transition:1s;
+}
+
+.border-yellow {
+    border-color: #F2BC56;
 }
