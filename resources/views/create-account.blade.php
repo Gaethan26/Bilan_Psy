@@ -7,7 +7,8 @@
         <div>
         <h2 class="text-center text-2xl font-bold tracking-tight text-white">Créer ton <span class="text-yellow">compte !</span></h2>
         </div>
-        <form class="mt-8 space-y-6" action="#" method="POST">
+        <form class="mt-8 space-y-6" action="/create-account" method="POST">
+            {{ csrf_field() }}
             <input type="hidden" name="remember" value="true">
             <div class="-space-y-px rounded-md shadow-sm">
                 <p class="mt-2 ml-2 text-left text-yellow text-lg">
@@ -30,7 +31,7 @@
                     Informations du compte
                 </p>
                 <div>
-                    <input id="id" name="id" type="text" autocomplete="id" required class="relative block w-full rounded-md mt-2 border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 sm:text-sm" placeholder="Identifiant">
+                    <input id="username" name="username" type="text" autocomplete="username" required class="relative block w-full rounded-md mt-2 border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 sm:text-sm" placeholder="Identifiant">
                 </div>
                 <div>
                     <input id="password" name="password" type="password" autocomplete="current-password" required class="relative block w-full rounded-md mt-2 border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 sm:text-sm" placeholder="Mot de passe">

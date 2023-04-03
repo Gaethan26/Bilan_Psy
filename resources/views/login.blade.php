@@ -1,6 +1,6 @@
 
 @extends('layouts.template')        
-
+@yield('content')
 @section('content')
 <div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
     <div class="w-full max-w-md space-y-8 background-login">
@@ -12,7 +12,8 @@
             <a href="/create-account" class="font-medium text-yellow">viens créer ton compte !</a>
         </p>
         </div>
-        <form class="mt-8 space-y-6" action="#" method="POST">
+        <form class="mt-8 space-y-6" action="/login" method="POST">
+        {{ csrf_field() }}
         <input type="hidden" name="remember" value="true">
         <div class="-space-y-px rounded-md shadow-sm">
             <div>
